@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambient barbearia</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? family = Fira + Sans + Condensed: wght @ 400; 600 & display = swap "rel =" stylesheet ">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <header>
+        <section class="header">
+            <div class="logo" id='logo'>
+                <img src="images/20210728 - AMBIENT BARBEARIA-new.png" alt="logo do site">
+            </div>
+            <div class='mobile-btn' onclick='menu_active()'>
+                <div class='line 1'></div>
+                <div class='line 2'></div>
+                <div class='line 3'></div>
+            </div>
+            
+            <nav class='menu' onclick="menu_mobile()">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#prices" >Preços</a></li>
+                    <li><a href="#endereço">Endereço</a></li>
+                    <li><a href="#contato">whatsapp / Redes sociais</a></li>
+                    <li><a href="">Quem somos!</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="menu-mobile">
+            <span class='close-button' onclick="close_menu()">
+                voltar
+            </span>
+            <ul>
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="#prices"  onclick="close_menu()">Preços</a></li>
+                <li><a href="#endereço"  onclick="close_menu()">Endereço</a></li>
+                <li><a href="#contato"  onclick="close_menu()">whatsapp / Redes sociais</a></li>
+                <li><a href=""  onclick="close_menu()">Quem somos!</a></li>
+            </ul>
+        </div>
+        <section class="slides">
+           <p>homens de verdade <br> frequentam <span class='cor-laranja'>barbearias</span> <br> de Verdade!</p>
+           <a href="https://wa.me/5562984604330?text=olá,%20tudo%20bem?%20Eu%20gostaria%20de%20agendar%20um%20horário!" target="_blank" class='button'> Quero marcar um horário</a>
+        </section>
+    </header>
+    <main>
+        <section class='main'>
+            <article id='prices' class='prices' name='prices'>
+                <h2>Nossos preços</h2>
+                <div class="text">
+                    <div class='service'><p>Barba</p> <p>15,00$</p></div>
+                    <div class='service'><p>Cabelo</p> <p>20,00$</p></div>
+                    <div class='service'><p>Design Sobrancelha</p> <p>10,00$</p></div>
+                    <div class='service'><p>Progressiva</p> <p>45,00$</p></div>
+                    <div class='service'><p>Hidratação</p> <p>15,00$</p></div>
+                    <div class='service'><p>limpesa de pele</p> <p>15,00$</p></div>
+                </div>
+            </article>
+            <div class='separator-vert'>
+
+            </div>
+            <article id='endereço'class='localization margin'>
+                <h2>Como nos encontrar?</h2>
+                <div class="api">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d478.6658132712171!2d-48.937864!3d-16.3062529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea43c3589ee75%3A0x43c12995c4d9f374!2sR.%20Argentina%2C%201100%20-%20Boa%20Vista%2C%20An%C3%A1polis%20-%20GO%2C%2075083-265!5e0!3m2!1spt-BR!2sbr!4v1630640048101!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                </div>
+                <address>Rua Argentina quadra 08 lote 02 Sala 01, Bairro Boa vista <br>
+                    Anápolis GO</address>
+            </article>
+        </section>
+        <section id='contato'class='contato margin'>
+            <h2>Redes sociais / marcar horários</h2>
+            <a class="whatsapp-link" href="https://wa.me/5562984604330?text=olá,%20tudo%20bem?" target="_blank">
+                <img src="images/whats-logo.svg" alt="link para o whatsapp" width="36px">
+                <span>whatsapp</span>
+            </a>
+            <a class='instagram'href="https://www.instagram.com/ambient_barbearia/" target="_blank">
+                <img src="images/insta-logo.svg" alt="link para o instagram" width="36px">
+                <span>Instagram</span>
+            </a>
+        </section>
+        
+    </main>
+    <footer>
+        <p>AMBIENT BARBEARIA</p>
+        
+    </footer>
+</body>
+<script src="scripts/devices.js"></script>
+</html>

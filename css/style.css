@@ -1,0 +1,323 @@
+html{
+    --orange-main: rgb(250, 119, 79);
+    --light-grey: rgb(58, 57, 57);
+    overflow-x: hidden;
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 65%;
+    font-family: 'Bebas Neue';  
+}
+body{
+    background: #f0ecec;
+    
+}
+a,li,ul{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+header .header{
+    background: rgba(0, 0, 0, 0.377);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 13vh;
+    position: absolute;
+   
+}
+.logo img{
+    height: 11vh;
+    
+}
+.logo{
+    cursor: pointer;
+    margin-left: 7.2rem;
+}
+.menu ul{
+    display: flex;
+    margin-right: 9rem;
+}
+.menu li{
+  
+    font-size: 2.8rem;
+    text-transform: uppercase;
+  
+}
+.menu li a{
+    color: rgba(255, 255, 255, 0.89);
+    font-weight: 500;  
+    padding: 1.8rem;  
+    margin: 0.3rem;
+    
+}
+.menu li a:hover{
+    color:var(--orange-main) ;
+    text-shadow: 0px 0px 10px rgba(253, 249, 249, 0.507);
+}
+
+.slides{
+    width: 100%;
+    height: 65vh;
+    background: url('../images/background-barbearia.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: .6rem solid rgba(0, 0, 0, 0.459);
+}
+/* TEXTO */
+
+.slides p{
+    font-size: 7rem;
+    text-transform: uppercase;
+
+    text-align: center;
+    margin: 15vh 5rem;
+    color: #fcffff8a;
+    text-shadow: 10px 10px 10x black;
+}
+
+.cor-laranja{
+    color:var(--orange-main) ;
+    font-size: 8rem;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10x black;
+}
+
+.button{
+    font-size: 3.2rem;
+    padding: 1.4rem 2.8rem;
+    background: var(--orange-main);
+    color: #fff;
+    border-radius: 1rem;
+    position: absolute;
+    right: 5rem;
+    bottom: 33rem;
+    border: none;
+    opacity: 0.8;
+}
+
+.button:hover{
+    opacity: 1;
+}
+/* MAIN */
+section.main{
+    font-size: 23rem;
+    display: grid;
+    grid-template-columns: 47% 2% 47%;
+    padding: 2rem;
+    color: var(--light-grey);
+    margin-top: 3rem;
+
+}
+.main h2{
+    padding-bottom:1.5rem ;
+    font-size: 4.8rem;
+    margin-bottom: 4rem;
+    
+}
+.separator-vert{
+    height: 100%;
+    width: 2px;
+    background: rgb(51, 50, 50);
+
+}
+article .text .service{ 
+    display: flex;
+    justify-content: space-between;
+    padding:0 3rem 0.8rem 1rem;
+    
+}
+.localization address{
+    font-size: 3.8rem;
+    color: var(--orange-main);
+}
+.contato{
+    width: 100%;
+    margin: auto;
+    font-size: 8rem;
+    display: list-item;
+    padding: 3rem;
+}
+
+.whatsapp-link{
+    align-items: center;
+   
+   border: 2px solid black;
+   border-radius: 1rem;
+   padding: 1rem 2rem;
+   transition: .3s;
+}
+
+.instagram{
+   
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: auto;
+    transition: .3s;
+    
+}
+
+.whatsapp-link:hover{
+    opacity: 0.7;
+    
+}
+.instagram:hover{
+    opacity: 0.7;
+}
+footer{
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.514);
+    height: 7vh;
+    background: rgba(0, 0, 0, 0.801);
+    margin-top:5rem ;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+}
+.mobile-btn{
+    padding: 1rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.menu-mobile{
+    display: none;
+    transition: 1s;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 980px){
+
+    .logo{
+        margin: 3rem;
+    }
+    .menu ul{
+        margin: 0;
+    }
+}
+@media (max-width: 860px){
+    .menu {
+        display: none;
+        
+    }
+    
+    .logo{
+        margin-left: 2rem;
+    }
+    .slides p{
+        padding-top: 7rem;
+        font-size: 4.3rem;
+        margin: auto;
+        
+    }
+    .cor-laranja{
+        font-size: 4.3rem;
+    }
+    .button{
+        display: none;
+    }
+    .line{
+        width: 35px;
+        height: 4px;
+        background: white;
+        margin: 4px;
+    }
+    section.main{
+        display:inline;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+        font-size: 18rem;
+    }
+    section.main h2{
+        margin-top: 5rem;
+        font-size: 3.8rem;
+    }
+    body{
+        text-align: center;
+    }
+    
+    .contato{
+        margin: auto;
+        padding: 0;
+        font-size: 5rem;
+    }
+    .margin{
+        margin-top: 2rem;
+    }
+    .menu-mobile.active{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgb(255, 255, 255);
+        overflow: hidden ;
+        transition-duration: 2s;
+        display: block;
+    }
+    .menu-mobile.active ul li a{
+        font-size: 2.5rem;
+        margin: .5rem;
+    }
+    
+    .menu-mobile.active ul{
+        margin-top: 30vh;
+    }
+    .menu-mobile.active li{
+        margin-top: 2.5rem;
+    }
+    .close-button{
+        font-size: 3rem;
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        
+    }
+    
+    
+    
+}
+@media(min-height: 600px){
+    .button{
+        bottom: 28rem ;
+    }
+}
+@media(min-height: 800px){
+    .button{
+        bottom: 38rem ;
+    }
+}
+@media (min-height: 1000px){
+    .button{
+        bottom:48rem
+    }
+}  
+@media (min-height: 1400px){
+    
+    html{font-size: 13px;}
+}
+@media (min-width: 1000px){
+    .logo{
+        margin-left: 15rem;
+    }
+    
+}
+
+/* 
+responsividade
+
+slides
+Comprimir imgaens
+corrigir problemas
+atualizar informasçoes
+ultima revisão 
+uppar na internet */
+
