@@ -285,6 +285,11 @@ footer{
     
     
 }
+@media(min-height: 300px){
+    html{
+        font-size: 8px
+    }
+}
 @media(min-height: 600px){
     .button{
         bottom: 28rem ;
